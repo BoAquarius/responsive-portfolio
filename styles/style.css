@@ -1,3 +1,9 @@
+:root {
+  --branding-color: #071596;
+  --accent-color: #ff8b67;
+  --base-color: #f1f1f1;
+}
+
 h1,
 h2,
 h3,
@@ -9,14 +15,37 @@ h6 {
 
 p {
   font-family: "Open Sans", sans-serif;
+  font-weight: 400;
 }
 
 .hero {
-  background-color: #f1f1f1;
+  background-color: var(--base-color);
   text-align: center;
+  padding: 160px 20px;
 }
 
 .hero p {
-  font-family: "poppins";
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.hero h1 {
+  font-size: 62px;
+}
+
+.hero h2 {
   font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 2;
+}
+
+.btn-branding {
+  background-color: var(--accent-color);
+  border-radius: 15px;
+  color: #ffff;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
 }
