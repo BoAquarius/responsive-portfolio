@@ -13,9 +13,15 @@ h6 {
   font-family: "Abril Fatface", cursive;
 }
 
+h2 {
+  font-size: 46px;
+}
+
 p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .hero {
@@ -41,8 +47,17 @@ p {
   line-height: 2;
 }
 
-.btn-branding {
+.btn-cta {
   background-color: var(--accent-color);
+  border-radius: 15px;
+  color: #ffff;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+.btn-branding {
+  background-color: var(--branding-color);
   border-radius: 15px;
   color: #ffff;
   font-size: 18px;
