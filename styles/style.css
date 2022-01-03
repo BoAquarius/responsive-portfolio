@@ -47,18 +47,18 @@ p {
 }
 
 .hero h2,
-.about-hero h2 {
+.content-container h2 {
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
   font-weight: 500;
   line-height: 2;
 }
 
-.about-hero {
+.content-container {
   padding: 160px 20px;
 }
 
-.about-hero-content {
+.content {
   margin: 30px;
 }
 
@@ -114,7 +114,7 @@ p {
     padding: 10px;
   }
 
-  .about-hero {
+  .content-container {
     text-align: center;
   }
 }
