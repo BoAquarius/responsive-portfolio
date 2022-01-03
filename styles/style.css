@@ -24,7 +24,7 @@ h2 {
 p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 30px;
   text-align: justify;
 }
@@ -101,7 +101,7 @@ p {
     padding: 80px 20px;
   }
 
-  .hero h1 {
+  h1 {
     font-size: 52px;
     line-height: 1.5;
   }
