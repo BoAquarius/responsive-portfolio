@@ -35,7 +35,8 @@ p {
   padding: 160px 20px;
 }
 
-.hero h3 {
+.hero h3,
+.content h3 {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   font-weight: 600;
