@@ -33,6 +33,34 @@ p {
   text-align: justify;
 }
 
+.navbar {
+  background: var(--base-color) !important;
+}
+
+nav a,
+.nav-link {
+  color: black !important;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+nav a:hover,
+.nav-link:hover {
+  color: black !important;
+  opacity: 50%;
+}
+
+.navbar-expand-lg,
+.navbar-collapse,
+.offcanvas-body {
+  justify-content: right;
+}
+
+.navbar-toggler {
+  color: rgba(0, 0, 0, 0) !important;
+  border-color: rgba(0, 0, 0, 0) !important;
+}
+
 .hero {
   background-color: var(--base-color);
   text-align: center;
@@ -78,12 +106,13 @@ p {
 
 .btn-branding,
 .btn-hidden {
-  background-color: var(--branding-color);
+  border: var(--branding-color) 1px solid;
   border-radius: 50px;
-  color: #ffff;
+  color: var(--branding-color);
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
+  transition: all 100ms ease-in-out;
 }
 
 .btn-hidden {
@@ -94,39 +123,12 @@ p {
 .btn-branding:hover,
 .btn-hidden:hover,
 .btn-cta:hover {
-  color: #ffff;
+  color: white;
+  background-color: var(--branding-color);
 }
 
 .description {
   padding: 80px 0px 80px 60px;
-}
-
-.navbar {
-  background: var(--base-color) !important;
-}
-
-nav a,
-.nav-link {
-  color: black !important;
-  margin-left: 12px;
-  margin-right: 12px;
-}
-
-nav a:hover,
-.nav-link:hover {
-  color: black !important;
-  opacity: 50%;
-}
-
-.navbar-expand-lg,
-.navbar-collapse,
-.offcanvas-body {
-  justify-content: right;
-}
-
-.navbar-toggler {
-  color: rgba(0, 0, 0, 0) !important;
-  border-color: rgba(0, 0, 0, 0) !important;
 }
 
 footer {
@@ -141,6 +143,10 @@ footer .contact-section {
 
 footer .contact-section p {
   margin: 0;
+}
+
+footer .contact-section a {
+  margin-top: 10px;
 }
 
 footer .email-link {
@@ -200,5 +206,9 @@ footer .social-links a:hover {
 
   footer .contact-section {
     padding: 30px;
+  }
+
+  footer .contact-section a {
+    margin-top: 5px;
   }
 }
