@@ -50,6 +50,10 @@ nav a:hover,
   opacity: 50%;
 }
 
+.active {
+  color: var(--branding-color) !important;
+}
+
 .navbar-expand-lg,
 .navbar-collapse,
 .offcanvas-body {
@@ -62,7 +66,7 @@ nav a:hover,
 }
 
 .logo {
-  width: 30px;
+  height: 15px;
 }
 
 .hero {
