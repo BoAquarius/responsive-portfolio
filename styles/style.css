@@ -67,7 +67,11 @@ nav a:hover,
 }
 
 .logo {
-  height: 15px;
+  height: 25px;
+}
+
+.boaquarius-name {
+  height: 250px;
 }
 
 .hero {
