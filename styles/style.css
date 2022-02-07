@@ -5,21 +5,24 @@
   --base-color: #f1f1f1;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Abril Fatface", cursive;
-}
-
 h1 {
+  font-family: "Yeseva One", cursive;
   font-size: 64px;
 }
 
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+h4,
+h5,
+h6 {
+  font-family: "Bakbak One", cursive;
+}
+
 h2 {
-  font-size: 46px;
+  font-size: 30px;
 }
 
 h4 {
@@ -27,8 +30,8 @@ h4 {
 }
 
 p {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
   font-size: 14px;
   line-height: 30px;
   text-align: justify;
@@ -36,6 +39,12 @@ p {
 
 .navbar {
   background: var(--base-color) !important;
+}
+
+.navbar-nav {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
 }
 
 nav a,
@@ -70,37 +79,43 @@ nav a:hover,
   height: 25px;
 }
 
-.boaquarius-name {
-  height: 250px;
-}
-
 .hero {
   background-color: var(--base-color);
-  padding: 40px 20px 0 20px;
+  padding: 20px 20px 0 20px;
 }
 
-.hero h3,
-.content h3 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  margin: 0;
+.hero-intro {
+  margin-top: 100px;
+}
+
+.boaquarius-name {
+  height: 200px;
 }
 
 .hero h1 {
   font-size: 78px;
 }
 
+.hero h3,
+.content h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 27px;
+  font-weight: 200;
+  margin-bottom: 8px;
+}
+
 .hero h2,
 .content-container h2 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 2;
+  font-family: "Poppins", sans-serif;
+  font-size: 27px;
+  font-weight: 200;
+  line-height: 1.5;
+  margin-top: 8px;
+  margin-bottom: 65px;
 }
 
 .hero-image {
-  width: 700px;
+  width: 600px;
 }
 
 .content-container {
@@ -222,8 +237,8 @@ footer .github-link a:hover {
 }
 
 @media (max-width: 960px) {
-  .hero {
-    padding: 80px 20px;
+  .hero-intro {
+    margin-top: 25px;
   }
 
   h1 {
