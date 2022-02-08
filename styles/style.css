@@ -61,7 +61,7 @@ nav a:hover,
 }
 
 .active {
-  color: var(--branding-color) !important;
+  color: black !important;
 }
 
 .navbar-expand-lg,
@@ -89,7 +89,9 @@ nav a:hover,
 }
 
 .boaquarius-name-image {
-  height: 200px;
+  height: auto;
+  width: auto;
+  display: block;
 }
 
 .hero h1 {
@@ -128,6 +130,10 @@ nav a:hover,
 
 .content {
   margin: 30px;
+}
+
+.home-content h2 {
+  font-size: 30px;
 }
 
 .btn-cta {
@@ -228,24 +234,29 @@ footer .social-links a:hover {
   background-color: var(--branding-color);
 }
 
-footer .github-link {
-  font-size: 12px;
+.ending .github-link {
+  font-size: 10px;
   text-decoration: none;
   color: black;
   margin: 0;
   line-height: 1;
 }
 
-footer .github-link a:hover {
+.ending .github-link a:hover {
   color: var(--branding-color);
 }
 
-@media (max-width: 1204px) {
-  .boaquarius-name-image {
-    height: 150px;
-    display: block;
-  }
+.ending {
+  background-color: var(--base-color);
+  padding: 20px;
+}
 
+.ending p {
+  margin-bottom: 0;
+  font-size: 10px;
+}
+
+@media (max-width: 1204px) {
   .hero-image {
     width: 350px;
     margin-left: 100px;
@@ -261,13 +272,8 @@ footer .github-link a:hover {
 
   .hero-intro {
     margin-top: 25px;
-    padding-left: 160px;
+    padding-left: 140px;
     padding-right: 80px;
-  }
-
-  .boaquarius-name-image {
-    height: 200px;
-    display: block;
   }
 
   .hero-cta {
@@ -325,11 +331,6 @@ footer .github-link a:hover {
     display: flex;
     flex-direction: column;
   }
-
-  .boaquarius-name-image {
-    height: 180px;
-    display: block;
-  }
 }
 
 @media (max-width: 576px) {
@@ -338,17 +339,13 @@ footer .github-link a:hover {
     padding-right: 20px;
   }
 
-  .boaquarius-name-image {
-    height: 100px;
-    display: block;
-  }
-
   .hero-image {
     width: 300px;
   }
 
   .hero h2,
   .content-container h2,
+  .home-content h2,
   .hero h3,
   .content h3 {
     font-size: 20px;
