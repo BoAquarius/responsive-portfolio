@@ -2,23 +2,23 @@
   --branding-color: #071596;
   --branding-color-2: #050a30;
   --accent-color: #ff8b67;
+  --accent-color-2: #ffb59f;
+  --gradient-color: #fc8d6e;
   --base-color: #f1f1f1;
+  --black-body: #171717;
 }
 
 h1 {
-  font-family: "Yeseva One", cursive;
+  font-family: "Poppins", sans-serif;
   font-size: 64px;
 }
 
 h2,
-h3 {
-  font-family: "Poppins", sans-serif;
-}
-
+h3,
 h4,
 h5,
 h6 {
-  font-family: "Bakbak One", cursive;
+  font-family: "Poppins", sans-serif;
 }
 
 h2 {
@@ -29,7 +29,8 @@ h4 {
   font-size: 36px;
 }
 
-p {
+p,
+a {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 14px;
@@ -37,8 +38,105 @@ p {
   text-align: justify;
 }
 
+.hero {
+  background: linear-gradient(to top, #ffff 20%, #fc8d6e 100%);
+  padding: 10px 10px 0 10px;
+}
+
+.about {
+  background: linear-gradient(to top, #ffff 40%, #fc8d6e 100%);
+  padding: 10px 10px 0 10px;
+}
+
+.work {
+  padding: 10px 10px 0 10px;
+}
+
+.contact {
+  background: linear-gradient(to top, #fc8d6e 0%, #bfd9fe 100%);
+  padding: 10px 10px 0 10px;
+}
+
+.contact-black {
+  background: var(--black-body);
+  padding: 10px 10px 0 10px;
+}
+
+.contact-black nav a,
+.contact-black .nav-link {
+  color: var(--base-color) !important;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.contact-black nav a:hover,
+.contact-black .nav-link:hover {
+  color: var(--base-color) !important;
+  opacity: 50%;
+}
+
+.contact-black .active {
+  color: var(--base-color) !important;
+}
+
+.contact-black .content h1,
+.contact-black .content h4,
+.contact-black .content a,
+.footer-black h4,
+.footer-black p {
+  color: var(--base-color);
+}
+
+.contact-black .content h4 {
+  font-weight: 150;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.contact-black .content h1 {
+  font-weight: 600;
+  font-size: 74px;
+}
+
+.contact-black .content a {
+  font-size: 16px;
+  margin-bottom: 30px !important;
+}
+
+.contact-black .content h3 {
+  color: var(--accent-color);
+}
+
+.contact-black .content {
+  margin: 60px 30px 30px 30px;
+}
+
+.footer-black {
+  padding: 0;
+}
+
+.footer-black .social-links {
+  margin-top: 160px;
+  padding-bottom: 20px;
+}
+
+.footer-black .social-links a {
+  margin: 0 20px;
+  color: var(--accent-color);
+  background-color: var(--base-color);
+  padding: 10px 18px;
+  font-size: 18px;
+  border-radius: 50%;
+  transition: all 100ms ease-in-out;
+}
+
+.footer-black .social-links a:hover {
+  color: var(--base-color);
+  background-color: var(--accent-color);
+}
+
 .navbar {
-  background: var(--base-color) !important;
+  background: transparent !important;
 }
 
 .navbar-nav {
@@ -79,9 +177,8 @@ nav a:hover,
   height: 25px;
 }
 
-.hero {
-  background-color: var(--base-color);
-  padding: 20px 20px 0 20px;
+.content-container {
+  padding: 20px 60px 0 60px;
 }
 
 .hero-intro {
@@ -115,17 +212,13 @@ nav a:hover,
 
 .hero-cta {
   margin-top: 65px;
-  margin-bottom: 85px;
+  margin-bottom: 65px;
 }
 
 .hero-image {
   width: 500px;
   margin-left: 80px;
-  margin-bottom: 20px;
-}
-
-.content-container {
-  padding: 160px 20px 0 20px;
+  margin-top: 60px;
 }
 
 .content {
@@ -197,11 +290,11 @@ nav a:hover,
 }
 
 footer {
-  margin: 60px 0;
+  padding: 60px 0;
 }
 
 footer .contact-section {
-  background-color: rgb(255, 139, 103, 0.45);
+  background-color: var(--accent-color-2);
   padding: 30px 120px;
   border-radius: 10px;
 }
@@ -216,14 +309,14 @@ footer .contact-section a {
 
 footer .social-links {
   margin-top: 55px;
-  margin-bottom: 50px;
+  margin-bottom: 0;
 }
 
 footer .social-links a {
   margin: 0 20px;
   color: var(--branding-color);
   background-color: var(--base-color);
-  padding: 10px 16px;
+  padding: 10px 18px;
   font-size: 18px;
   border-radius: 50%;
   transition: all 100ms ease-in-out;
@@ -237,23 +330,18 @@ footer .social-links a:hover {
 .ending .github-link {
   font-size: 10px;
   text-decoration: none;
-  color: black;
+  color: var(--base-color);
   margin: 0;
   line-height: 1;
 }
 
 .ending .github-link a:hover {
-  color: var(--branding-color);
+  color: var(--accent-color);
 }
 
 .ending {
-  background-color: var(--base-color);
+  background-color: var(--black-body);
   padding: 20px;
-}
-
-.ending p {
-  margin-bottom: 0;
-  font-size: 10px;
 }
 
 @media (max-width: 1204px) {
@@ -278,7 +366,7 @@ footer .social-links a:hover {
 
   .hero-cta {
     margin-top: 45px;
-    margin-bottom: 65px;
+    margin-bottom: 45px;
     display: block;
     text-align: center;
   }
@@ -287,7 +375,7 @@ footer .social-links a:hover {
     width: 400px;
     margin-left: 0;
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   h1 {
@@ -349,5 +437,20 @@ footer .social-links a:hover {
   .hero h3,
   .content h3 {
     font-size: 20px;
+  }
+
+  .contact-black .content h1 {
+    font-weight: 600;
+    font-size: 54px;
+  }
+
+  .contact-black .content h4 {
+    font-weight: 150;
+    font-size: 24px;
+  }
+
+  .footer-black .social-links {
+    margin-top: 50px;
+    padding-bottom: 20px;
   }
 }
