@@ -312,6 +312,10 @@ footer {
   padding: 20px 0 48px 0;
 }
 
+.footer-home {
+  padding: 70px 0 48px 0;
+}
+
 footer .contact-section {
   background-color: var(--accent-color-2);
   padding: 30px 100px;
@@ -367,6 +371,10 @@ footer .social-links a:hover {
     width: 350px;
     margin-left: 100px;
     margin-top: 80px;
+  }
+
+  .footer-home {
+    padding: 20px 0 48px 0;
   }
 }
 
