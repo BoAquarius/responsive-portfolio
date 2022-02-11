@@ -309,12 +309,12 @@ nav a:hover,
 }
 
 footer {
-  padding: 60px 0;
+  padding: 20px 0 48px 0;
 }
 
 footer .contact-section {
   background-color: var(--accent-color-2);
-  padding: 30px 120px;
+  padding: 30px 100px;
   border-radius: 10px;
 }
 
@@ -327,7 +327,6 @@ footer .contact-section a {
 }
 
 footer .social-links {
-  margin-top: 55px;
   margin-bottom: 0;
 }
 
@@ -400,6 +399,10 @@ footer .social-links a:hover {
   h1 {
     font-size: 52px;
     line-height: 1.5;
+  }
+
+  .work-portfolio h1 {
+    font-size: 52px;
   }
 
   h2 {
